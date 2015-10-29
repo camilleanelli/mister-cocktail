@@ -7,10 +7,11 @@ Rails.application.routes.draw do
   # get 'cocktails/new' => 'cocktails#new', as: 'new_cocktail'
 
   # post 'cocktail' => 'ocktails#create
-    resources :cocktails, only: [ :index, :show, :new, :create ] do
-    resources :doses, only: [ :new, :create, :destroy ]
+  resources :cocktails, only: [ :index, :show, :new, :create ] do
+    resources :doses, only: [ :new, :create ]
 
   end
+  resources :doses, only: [:destroy]
 
   root 'cocktails#index'
 
