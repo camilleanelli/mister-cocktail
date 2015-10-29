@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get 'cocktails' => 'cocktails#index'
+
+  get 'cocktails/:id' => 'cocktails#show'
+
+  get 'cocktails/new' => 'cocktails#new'
+
+  post 'cocktail' => 'cocktails#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
