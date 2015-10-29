@@ -10,6 +10,12 @@ Cocktail.create(name: "Mojito")
 Cocktail.create(name: "Pina Colada")
 Cocktail.create(name: "Caipirina")
 
+Dose.create(ingredient_id: 1, cocktail_id: 1, description:"6cl")
+Dose.create(ingredient_id: 4, cocktail_id: 2, description:"6cl")
+Dose.create(ingredient_id: 5, cocktail_id: 3, description:"6cl")
+
+
+
 
 
 # This file should contain all the record creation needed to seed the database with its default values.

@@ -6,9 +6,13 @@ Rails.application.routes.draw do
 
   # get 'cocktails/new' => 'cocktails#new', as: 'new_cocktail'
 
-  # post 'cocktail' => 'cocktails#create'
+  # post 'cocktail' => 'cocktails#create
+  resources :cocktails do
+    resources :doses
+  end
 
-  resources :cocktails
+  root 'cocktails#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
