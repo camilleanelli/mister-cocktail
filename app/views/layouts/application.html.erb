@@ -5,12 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
 
+<div class="jumbotron text-center">
+      <h1>Mister Cocktail</h1>
+      <p>Partagez, créez de délicieux cocktails!</p>
+      <p><a class="btn btn-warning btn-lg" href="#" role="button"><i class="icon-glass"></i></a></p>
+</div>
+
 <%= yield %>
+
+
 
 </body>
 </html>
