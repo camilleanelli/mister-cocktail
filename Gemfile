@@ -22,6 +22,10 @@ gem "font-awesome-rails"
 gem 'simple_form'
 
 gem 'figaro'
+
+gem 'aws-sdk', '< 2.0'
+
+gem 'paperclip'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
